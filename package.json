@@ -51,7 +51,8 @@
     "precommit": "lint-staged",
     "prepublish": "npm run build",
     "test": "jest --watch",
-    "test-ci": "CI=true jest"
+    "test-ci": "CI=true jest",
+    "coverage": "jest --coverage --no-cache"
   },
   "lint-staged": {
     "*.js": [
