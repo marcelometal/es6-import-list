@@ -46,12 +46,13 @@ if (argv.json) {
     console.log(JSON.stringify(importsList, null, 2)) // eslint-disable-line no-console
     process.exit(0)
   })
-}
-getImports(dir, importsList => {
-  const table = new Table({ head: ['Modules', 'Import List'] })
-  Object.keys(importsList).forEach(key => {
-    const value = [...importsList[key]].join('\n')
-    table.push([key, value])
+} else {
+  getImports(dir, importsList => {
+    const table = new Table({ head: ['Modules', 'Import List'] })
+    Object.keys(importsList).forEach(key => {
+      const value = [...importsList[key]].join('\n')
+      table.push([key, value])
+    })
+    console.log(table.toString()) // eslint-disable-line no-console
   })
-  console.log(table.toString()) // eslint-disable-line no-console
-})
+}
