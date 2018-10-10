@@ -75,7 +75,6 @@ Default options:
 const options = {
   match: /.js$/,
   exclude: [/^\./],
-  excludeDir: ['dist', 'lib', 'node_modules'],
 }
 ```
 
@@ -88,7 +87,7 @@ const getImports = require('es6-import-list');
 const options = {
   match: /.js$/,
   exclude: [/^\./],
-  excludeDir: ['node_modules'],
+  excludeDir: ['dist', 'lib', 'node_modules'],
 };
 
 getImports('my-directory', options, importList => {
