@@ -60,7 +60,6 @@ const _groupImports = importsList => {
 const defaultSettings = {
   match: /.js$/,
   exclude: [/^\./],
-  excludeDir: ['dist', 'lib', 'node_modules'],
 }
 
 const _parseImports = content => {
