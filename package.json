@@ -1,6 +1,6 @@
 {
   "name": "es6-import-list",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "main": "lib/index.js",
   "engines": {
     "node": ">=7.5.0"
